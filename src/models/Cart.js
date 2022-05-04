@@ -7,20 +7,22 @@ const Schema = new mongoose.Schema({
     }],
     username: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
+        required: 'User'
     },
     address: {
-        street: String,
-        required: true
-    },
-    number: {
-        type: String,
-        required: true
-    },
-    city: {
-        type: String,
-        required: true
-    },
+        street: {
+            type: String,
+            required: true
+        },
+        number: {
+            type: String,
+            required: true
+        },
+        city: {
+            type: String,
+            required: true
+        },
+    },    
     payment: {
         card: {
             number: {

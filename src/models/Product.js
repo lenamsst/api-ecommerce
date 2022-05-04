@@ -17,7 +17,7 @@ const Schema = new mongoose.Schema({
         required: true
     },
     productImage: {
-        type: String,        
+        type: String        
     },
     username: {
         type: mongoose.Schema.Types.ObjectId,
