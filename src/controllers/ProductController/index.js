@@ -47,7 +47,7 @@ const ProductController = {
     async updateProduct(req, res) {
         
         const bodyData = req.body
-        const { product_id, user_id } = req.params
+        const { product_id } = req.params
 
         try{
 
@@ -64,7 +64,7 @@ const ProductController = {
 
     async deleteProduct(req, res) {
 
-        const { product_id, user_id } = req.params
+        const { product_id } = req.params
 
         try{
 

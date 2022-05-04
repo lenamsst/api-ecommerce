@@ -42,7 +42,7 @@ const CartController = {
 
     async getCart(req, res) {
 
-        const { user_id, cart_id } = req.params
+        const { cart_id } = req.params
 
         try {
 
